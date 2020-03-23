@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Corona Data</title>
+  </head>
+  <body class="">
+
+    <nav class="navbar navbar-dark">
+      <a class="navbar-brand" href="#">
+        <h3 class="display-5 container-md judul">Covid-19 Global Case by Firmansyah, Egi</h3>
+      </a>
+    </nav>
+      <!-- <div class="container"> -->
+        
+        <div class="container mt-3">
+          <h2 class="display-5 font-out">Global Case</h2>
+          <p class="update-date font-out"></p>
+          <div class="row card-global d-flex">
+            <div class="col-md-4 col-lg-4 mb-4">
+              <div class="card global" style="width: 18rem;">
+                <div class="card-body confirmed-global">
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-4 mb-4">
+              <div class="card global" style="width: 18rem;">
+                <div class="card-body recovered-global">
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-4  mb-4">
+              <div class="card global" style="width: 18rem;">
+                <div class="card-body deaths-global">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row indonesia mt-3">
+            <div class="container">
+              <h2 class="display-5 font-out">indonesia Case</h2>
+              <p class="update-date-indonesia font-out"></p>
+              <div class="row">
+                <div class="col-4 mb-4 d-flex">
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-body confirmed-indonesia">
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 mb-4 d-flex">
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-body recovered-indonesia">
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 mb-4 d-flex">
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-body deaths-indonesia">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- </div> -->
+
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col">
+                <!-- <h1>Corona Data In The World API</!--> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="input-group mb-4">
+                    <input type="text" class="form-control inputKey" placeholder="Search Country...">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-dark search-btn" type="button" id="button-addon2">Search</button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <!-- <div class="d-flex p-2 highlight">I'm a flexbox container!</div> -->
+        <div class="row d-flex mb-4 card-data">
+          
+        </div>
+
+        <!-- <div class="row covid-card" > -->
+            <table class="table id="tabel-fixed"" >
+                <thead class="thead">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Country</th>
+                    <th scope="col">Confirmed</th>
+                    <th scope="col">Recovered</th>
+                    <th scope="col">Deaths</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody class="tabel-data">
+                    
+                </tbody>
+              </table>
+        <!-- </div>   -->
+    </!-->
+    
+
+    <!-- Modal -->
+    <div class="modal fade" id="countryModal" tabindex="-1" role="dialog" aria-labelledby="movieModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="movieModalLabel country-detail">Detail</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <!-- <div class="modal-body countries-modal"> -->
+              <table class="table">
+                <thead class="thead">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Province</th>
+                    <th scope="col">Confirmed</th>
+                    <th scope="col">Recovered</th>
+                    <th scope="col">Deaths</th>
+                    <th scope="col">Active</th>
+                  </tr>
+                </thead>
+                <tbody class="tabel-data-detail">
+                    
+                </tbody>
+              </table>
+            <!-- </div> -->
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="style.js"></script>
+    <script>
+      
+
+   
+    </script>
+  </body>
+</html>

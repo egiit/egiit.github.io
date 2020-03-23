@@ -1,0 +1,105 @@
+body{
+  font-family: 'Nunito', sans-serif;
+  /* background: #333; */
+  background-repeat: no-repeat;
+background: #FFEFBA;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.font-out{
+  color: black;
+}
+
+
+
+.navbar{
+  background: #333;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.judul{
+  color: #FFFFFF;
+  text-shadow: 3px 5px 2px black;
+}
+.card{
+  width: 250px;
+  height: 170px;
+  background: #333;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+  transition: 1.5s;
+}
+
+
+.card-search{
+  background: #333;
+  border: solid gray 1px;
+  width: 100;
+  height: 200;
+}
+
+.rate-recovered{
+  background: green;
+}
+
+.num-conf{
+  color: yellow;
+}
+
+.num-rec{
+  color: green;
+}
+
+.num-deaths{
+  color: red;
+}
+.rate-deaths{
+  background: red;
+}
+
+
+html { font-size: 1rem; }
+
+@media (min-width: 275px) {
+  html { font-size: 0.75rem; }
+}
+@media (min-width: 768px) {
+  html { font-size: 0.75rem; }
+}
+@media (min-width: 992px) {
+  html { font-size: 0.95rem; }
+}
+@media (min-width: 1200px) {
+  html { font-size: 1rem; }
+}
+
+.thead{
+  background: #333;
+  color: white;
+}
+
+tbody tr:hover{
+  background:#BDC3C7;
+    color:#FFFFFF;
+  }
+
+  .container2{
+    width:100%;
+    margin:auto;
+  }
+
+.fixed{
+  top:0;
+  position:fixed;
+  width:auto;
+  display:none;
+  border:none;
+}
+
+.scrollMore{
+  margin-top:600px;
+}
+
+.up{
+  cursor:pointer;
+}
