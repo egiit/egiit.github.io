@@ -31,10 +31,10 @@
  })(jQuery);
 
  $(document).ready(function(){
-    $("table").fixMe();
-    $(".up").click(function() {
-        $('html, body').animate({
-        scrollTop: 0
-    }, 2000);
-  });
+        $("table").fixMe();
+        $(".up").click(function() {
+            $('html, body').animate({
+            scrollTop: 0
+        }, 2000);
+    });
   });

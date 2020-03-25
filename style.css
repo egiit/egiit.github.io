@@ -60,14 +60,47 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
 
 html { font-size: 1rem; }
 
+@media (min-width: 100px) {
+  /* html { font-size: 0.5rem; } */
+  .judul{ font-size: 1rem;}
+  .confirmed-indonesia .num-conf{font-size: 1.5rem;}
+  .recovered-indonesia .num-rec{font-size: 1.6em;}
+  .deaths-indonesia .num-deaths{font-size: 1.6rem;}
+  .confirmed-indonesia .ina{font-size: 10px;}
+  .recovered-indonesia .ina{font-size: 10px;}
+  .deaths-indonesia .ina{font-size: 11px;}
+  .table th{padding: 5px;}
+  .table td{padding: 5px;}
+  .table{font-size: 0.7rem;}
+}
 @media (min-width: 275px) {
-  html { font-size: 0.75rem; }
+  /* html { font-size: 0.5rem; } */
+  .judul{ font-size: 1rem;}
+  .confirmed-indonesia .num-conf{font-size: 2rem;}
+  .recovered-indonesia .num-rec{font-size: 2.5rem;}
+  .deaths-indonesia .num-deaths{font-size: 2.5rem;}
+  .confirmed-indonesia .ina{font-size: 11px;}
+  .recovered-indonesia .ina{font-size: 11px;}
+  .deaths-indonesia .ina{font-size: 11px;}
+  .table th{padding: 5px;}
+  .table td{padding: 5px;}
+  .table{font-size: 0.875rem;}
 }
 @media (min-width: 768px) {
-  html { font-size: 0.75rem; }
+  /* html { font-size: 0.75rem; } */
+  .judul{ font-size: 2rem;}
+  .confirmed-indonesia .num-conf{font-size: 3rem;}
+  .recovered-indonesia .num-rec{font-size: 3rem;}
+  .deaths-indonesia .num-deaths{font-size: 3rem;}
+  .confirmed-indonesia .ina{font-size: 16px;}
+  .recovered-indonesia .ina{font-size: 16px;}
+  .deaths-indonesia .ina{font-size: 16px;}
+  .table th{padding: 16px;}
+  .table td{padding: 16px;}
+  .table{font-size: 1rem;}
 }
 @media (min-width: 992px) {
-  html { font-size: 0.95rem; }
+  html { font-size: 1rem; }
 }
 @media (min-width: 1200px) {
   html { font-size: 1rem; }
